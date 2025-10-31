@@ -22,6 +22,5 @@ jobs:
         node-version: 22.x
         cache: 'yarn'
     - run: yarn install
-    - run: yarn build --if-present
     - name: Deploy to Render
       run: curl https://api.render.com/deploy/srv-d42e0va4d50c73eu2ocg?key=iEDd6ZlDHEY
